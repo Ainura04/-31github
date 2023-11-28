@@ -1,0 +1,9 @@
+#include <iostream>
+ using namespace std;
+ int main ()
+ {
+     int a = 130;
+     int b = 230;
+     int toplam = a + b;
+     cout<< toplam;
+ }
