@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+int odevNotu,
+ araSinavNotu,
+ finalNotu,
+ donemSonuNotu;
+cout << "Odev notunu giriniz: \n";
+cin >> odevNotu;
+cout << "Ara sinav notunu giriniz: \n";
+cin >> araSinavNotu;
+cout << "Final notunu giriniz: \n";
+cin >> finalNotu;
+donemSonuNotu=0.15*odevNotu+0.35*araSinavNotu+0.50*finalNotu;
+cout << "Donem Sonu Notu: " << donemSonuNotu << endl;
+return 0;
+}
