@@ -1,0 +1,11 @@
+#include <iostream>
+using namespace std;
+int main ()
+{ int i = 15;
+ while (i < 37)
+   {
+   cout<< i <<"," << i;
+   i += 2;
+   }
+ return 0;
+ }
