@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+int main ()
+{
+setlocale (LC_ALL, "rus");
+int posetitel = 0;
+int vozrast = 0;
+int max_vozrast = 0;
+int min_vozrast = 100;
+int sum = 0;
+int middle_vozrast = 0;
+cout<< " Сколько человек посетил спортзал?";
+cin>>posetitel;
+for (int i = 0; i < posetitel; i++)
+{
+cout<<"Введите возраст "<< i + 1<<" посетителя: ";
+cin>>vozrast;
+if (vozrast > max_vozrast)
+max_vozrast = vozrast;
+if (vozrast < min_vozrast)
+min_vozrast = vozrast;
+sum += vozrast;
+}
+middle_vozrast = sum / posetitel;
+cout<<"Самый старшый: "<<max_vozrast;
+cout<<"Самый младший: "<<min_vozrast;
+cout<<"Средний возраст всех посетителей: "<<middle_vozrast;
+retutn 0;
+}
