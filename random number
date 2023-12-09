@@ -1,0 +1,13 @@
+#include <iostream>
+#include <stdlib.h>
+using namespace std;
+int main()
+{
+  int x;
+  x = rand();
+  cout<<"x = "<<x<<endl;
+  int y;
+  y = rand();
+  cout<<"y = "<<y<<endl;
+  return 0;
+  }
