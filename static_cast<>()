@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+int main ()
+{
+double ondaliksayi = 3.55;
+bool kosul = true;
+char karakter = 'a';
+cout<<ondaliksayi<<" "<<kosul<<" "<<karakter;
+int sayi1, sayi2, sayi3;
+sayi1 = static_cast<int>(ondaliksayi);
+sayi2 = static_cast<int>(kosul);
+sayi3 = staic_cast<int>(karakter);
+cout<<endl<<sayi1<<" "<<sayi2<<" "<<sayi3;
+return 0;
+}
