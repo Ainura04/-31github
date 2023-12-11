@@ -1,0 +1,9 @@
+#include<iostream>
+#include<climits>
+using namespace std;
+int main()
+{
+    cout<<"minimum limit:"<<CHAR_MIN<<" byte"<<endl;
+     cout<<"maximum limit:"<<CHAR_MAX<<" byte";
+    return 0;
+}
