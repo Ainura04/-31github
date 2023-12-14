@@ -1,0 +1,14 @@
+#include <iostream>
+int power(int x, unsigned int p)
+{
+int answer = 1;
+while (p) {
+if (p & 1)
+{
+answer *= x;
+}
+p >>= 1;
+x *= x;
+}
+return answer;
+}
