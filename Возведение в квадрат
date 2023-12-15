@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+int main ()
+{
+setlocale (LC_ALL "rus");
+int digit = 0;
+char exit = 'y';
+for(;;)
+{
+cout<<"Введите число";
+cin>>digit;
+cout<<"Квадрат "<<digit<<" = "<<digit * digit;
+cout<<"\n Продолжить ввод чисел - Y,выйти - N";
+cin>>exit;
+if (exit != 'Y' && != 'y')
+break;
+}
+return 0;
+}
+
