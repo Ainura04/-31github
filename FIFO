@@ -1,0 +1,34 @@
+#include <bits/stdc++.h>
+using namespace std;
+void first_in_first_out(queue<int> q)
+{
+        while(!q.empty())
+    {
+        cout<<q.front()<<" ";
+        q.pop();
+    }
+    cout<<endl;
+}
+
+  int main ()
+  {
+    queue<int>q;
+    
+    for (int i = 0; i < 7; i++)
+    q.push(i);
+    cout<<"Which elements we have in queue? ";
+    first_in_first_out(q);
+    
+    int remove_element = q.front();
+    q.pop();
+    cout<<"Which element should we remove? ";
+    first_in_first_out(q);
+    
+    int first = q.front();
+    cout<<"First of queue: "<<first<<endl;
+    
+    int size = q.size();
+    cout<<"Size of queue: "<<size;
+     
+    return 0 ;
+  }
