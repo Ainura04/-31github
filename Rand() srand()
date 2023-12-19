@@ -1,0 +1,32 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+#include <vector>
+#include <cstdlib>
+#include <ctime>
+using namespace std;
+int getRandomNumber(int min, int max){
+ return rand() % (max -min + 1) + min;
+}
+int main() {
+  srand(static_cast<unsigned int>(time (0)));
+  
+  int numParticipants;
+  cout<<"Enter thr number of paricipants: ";
+  cin>>numParticipants;
+  
+  if (numParticipants <= 0) {
+      cerr<<"Invalid number of participants. Exciting program."<<endl;
+      return 1;
+  }
+  vector<string>participants;
+  for (int i = 0; i <numParticipants; ++1){
+      string participantName;
+      cout<<"Ener the name of participant "<<(i + 1)<<":";
+      cin>>participantName;
+      participants.push_back(participantName);
+  }
+  int winnerIndex = getRandomNumber(0,numParticipants - 1);
+  string winner = participants[winnerIndex];
+  cout<<"\nLottery Winner: "<<winner<<"!\nCongratulations!"<<endl;
+  return 0;
+}
