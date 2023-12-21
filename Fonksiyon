@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+int kuvvetAl(int sayi, int kuvvet)
+{
+for(int i = 0; i <= kuvvet; i++)
+sonuc = sonuc * sayi;
+return sonuc;
+}
+int main()
+{ int taban = 5;
+int us = 4;
+int bosteri;
+bosteri = kuvvetAl(5,4);
+cout<<bosteri;
+return 0;
+}
