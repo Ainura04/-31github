@@ -1,0 +1,19 @@
+#include <iostream>
+#include <vector>
+int main()
+{
+	setlocale(LC_ALL, "russian");
+	std::cout << "Введите количество чисел Фибоначчи: ";
+	int count;
+	std::cin >> count;
+	std::vector <unsigned long long> fibo;
+	for (unsigned long long i = 0; i < count; i++)
+	{
+		if (i == 0 || i == 1)
+			fibo.push_back(i);
+		else
+			fibo.push_back(fibo.at(i - 1) + fibo.at(i - 2));
+		std::cout << fibo.at(i) << " ";
+	}
+	return 0;
+}
