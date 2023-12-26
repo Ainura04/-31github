@@ -1,0 +1,21 @@
+#include<iostream>
+using namespace std;
+void DegerleriDegistir(int*deger1, int*deger2)
+{
+*deger1 = 3;
+*deger2 = 6;
+cout<<endl<<"fonksiyonun icindeyiz"<<endl;
+cout<<"deger1 adresi "<<deger1<<endl;
+cout<<"deger2 adresi "<<deger2<<endl;
+}
+int main()
+{
+int degis1 = 3, int degis2 = 6;
+cout<<"degis1 = "<<degis1<<endl;
+cout<<"degis2 = "<<degis2<<endl;
+cout<<"degis1 adresi = "<<&degis1<<endl;
+cout<<"degisi2 adresi = "<<&degis2<<endl;
+DegerleriDegistir(&degis1, &degis2);
+cout<<"degis1 = "<<degis1<<endl;
+cout<<"degis2 = "<<degis2<<endl;
+}
