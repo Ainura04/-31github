@@ -1,0 +1,22 @@
+#include <iostream>
+#include <cstdlib>
+#include <time.h>
+using namespace std;
+int main()
+{
+    int randomTickets[10] = {};
+    int n;
+    srand(time(0));
+    for (int i = 0; i < 10; i++)
+    {
+        randomTickets[10] = rand() % 100 +1;
+        cout<<n<<"=";
+        {
+        if (n <= 50)
+        cout<<"Process A"<<endl;
+        if (n > 50)
+        cout<<"Process B"<<endl;
+        }
+    }
+    return 0;
+} Lotery Scheduling
